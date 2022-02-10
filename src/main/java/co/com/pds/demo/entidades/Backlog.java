@@ -19,12 +19,12 @@ public class Backlog extends  EntidadBase{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
-    private  String projecidentifier;
+    //private  String projecidentifier;
 
 
 
 
-
+/*
     @JsonBackReference // para que no muestre la relacion
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "project_id")
@@ -35,7 +35,7 @@ public class Backlog extends  EntidadBase{
     @JoinColumn(name = "project_task_id")
     private List<ProjecTask> projecTasks;
 
-
+*/
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
